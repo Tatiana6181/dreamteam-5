@@ -34,3 +34,6 @@ img {
   height: auto;
 }
 
+svg:not(:root) {
+  overflow: visible;
+}
