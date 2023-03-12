@@ -6,12 +6,12 @@
 .hero-container {
   position: relative;
   z-index: 10;
-  max-width: 320px;
+   /* max-width: 320px; */
   height: 389px;
 /*   
    height: 100%;  */
-  margin: 0 auto;
-  padding: 0 16px; 
+  /* margin: 0 auto;
+  padding: 0 16px;  */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -19,16 +19,17 @@
 
 @media screen and (min-width: 768px) {
   .hero-container {
-     max-width: 720px;
+   /* max-width: 720px; */
     height: 825px; 
   }
 }
 @media screen and (min-width: 1280px) {
   .hero-container {
-     max-width: 1280px;
+     /* max-width: 1280px; */
     height: 878px; 
   }
 }
+
 .hero-title {
   position: absolute;
   bottom: 0;
