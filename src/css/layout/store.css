@@ -42,7 +42,7 @@
 .store-title::after {
     content: "";
     display: block;
-    width: 190px;
+    width: 100%;
     height: 1px;
     background-color: #000000;
 }
@@ -80,13 +80,38 @@
         margin-bottom: 8px;
     }
 
-    .store-list-item-title::after {
+    .store-compliments-after:after {
         content: "";
         display: block;
-        width: 100%;
+        width: 124px;
         height: 1px;
         background-color: #000000;
     }
+
+    .store-bouquets-s-after::after {
+        content: "";
+        display: block;
+        width: 90px;
+        height: 1px;
+        background-color: #000000;
+    }
+
+    .store-bouquets-m-after::after {
+        content: "";
+        display: block;
+        width: 78px;
+        height: 1px;
+        background-color: #000000;
+    }
+
+    .store-bouquets-l-after::after {
+        content: "";
+        display: block;
+        width: 89px;
+        height: 1px;
+        background-color: #000000;
+    }
+
 
     .store-list-item-text {
         font-size: 24px;
@@ -129,6 +154,38 @@
     .store-list-item-text {
         font-size: 28px;
         line-height: calc(34 / 28);
+    }
+
+        .store-compliments-after:after {
+        content: "";
+        display: block;
+        width: 337px;
+        height: 1px;
+        background-color: #000000;
+    }
+
+    .store-bouquets-s-after::after {
+        content: "";
+        display: block;
+        width: 300px;
+        height: 1px;
+        background-color: #000000;
+    }
+
+    .store-bouquets-m-after::after {
+        content: "";
+        display: block;
+        width: 286px;
+        height: 1px;
+        background-color: #000000;
+    }
+
+    .store-bouquets-l-after::after {
+        content: "";
+        display: block;
+        width: 299px;
+        height: 1px;
+        background-color: #000000;
     }
 
 }
