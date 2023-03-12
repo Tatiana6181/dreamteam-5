@@ -1,6 +1,4 @@
-.navigation{
-    display: none;
-  }
+
   .header{
     padding-top: 16px;
 }
@@ -11,7 +9,9 @@
     margin-right: 183px;
     text-decoration: none;
   }
-
+  .navigation{
+    display: none;
+  }
   .header-phone{
     text-decoration: none;
   }
