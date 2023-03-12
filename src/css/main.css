@@ -16,6 +16,7 @@
 @import url('./components/container.css');
 @import url('./components/buttons.css');
 @import url('./components/section_titles.css');
+@import url('./components/section_wrap.css');
 
 /* layout */
 @import url('./layout/header.css');
@@ -25,3 +26,4 @@
 @import url('./layout/delivery.css');
 @import url('./layout/blog.css');
 @import url('./layout/footer.css');
+@import url('./layout/mobile_menu.css');
