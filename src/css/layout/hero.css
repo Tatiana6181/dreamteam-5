@@ -137,10 +137,22 @@
   animation: scale-up-center 1000ms ease-out 1000ms both;
 }
 .hero-img {
-  width: 100%;
+  max-width: 320px;
   height: 100%;
   object-fit: cover;
   object-position: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media screen and (min-width:768px) {
+  .hero-img {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width:1280px) {
+  .hero-img {
+    max-width: 1280px;
+  }
 }
 @keyframes scale-up-center {
   0% {
