@@ -1,6 +1,8 @@
 /* Mobile menu window ================= */
 
-.menu-container {
+.menu {
+  padding: 124px 110px 180px 110px;
+  position: relative;
   background-color: var(--accent-color);
     position: fixed;
     top: 0;
@@ -9,55 +11,55 @@
     height: 100%;
     z-index: 11;
     transform: translateX(100%);
-    
-
     transition: var(--transition-dur-and-func);
   }
   
   
 
-  .menu-container.is-open {
+  .menu.is-open {
     transform: translateX(0);
   }
   
-  .mobile-menu-btn-close {
+  .menu__button {
     position: absolute;
-    width: 24px;
-    height: 24px;
     top: 16px;
     right: 16px;
+
+    width: 24px;
+    height: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0;
     border: none;
-    background-color: green;
+    background-color:inherit;
     cursor: pointer;
   }
   
-  .mobile-menu-btn-close-icon{
-    stroke: #ffffff;
+  .menu__icon{
+    stroke: var(--secondary-color);
   }
 
-  .mobile-menu{
+  .menu__nav-list{
     text-align: center;
   }
   
   
-  .mobile-menu-link {
+  .menu__nav-link {
     font-size: 20px;
     line-height: calc(24/20);
     text-decoration: none;
-    color: var(--white-color);
+    color: var(--secondary-color);
   
   }
   
-  .mobile-menu-item:not(:last-child){
+  .menu__nav-item:not(:last-child){
     margin-bottom: 26px;
   }
   
 
   @media screen and (min-width: 768px){
-    .mobile-menu-btn{display:none;} 
+    .menu__button{display:none;} 
   }
+  
   
