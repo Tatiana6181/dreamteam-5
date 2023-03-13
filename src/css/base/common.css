@@ -3,4 +3,8 @@ body {
     color: var(--primary-color);
     font-family: 'Montserrat', sans-serif;
   }
+
+  body.modal-open {
+    overflow: hidden;
+  }
   
