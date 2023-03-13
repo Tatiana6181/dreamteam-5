@@ -17,6 +17,7 @@
 @import url('./components/buttons.css');
 @import url('./components/section_titles.css');
 @import url('./components/section_wrap.css');
+@import url('./components/modals.css');
 
 /* layout */
 @import url('./layout/header.css');
