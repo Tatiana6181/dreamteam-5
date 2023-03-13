@@ -83,7 +83,7 @@
     .store-compliments-after:after {
         content: "";
         display: block;
-        width: 124px;
+        width: 120px;
         height: 1px;
         background-color: #000000;
     }
@@ -91,7 +91,7 @@
     .store-bouquets-s-after::after {
         content: "";
         display: block;
-        width: 90px;
+        width: 88px;
         height: 1px;
         background-color: #000000;
     }
@@ -99,7 +99,7 @@
     .store-bouquets-m-after::after {
         content: "";
         display: block;
-        width: 78px;
+        width: 75px;
         height: 1px;
         background-color: #000000;
     }
@@ -107,7 +107,7 @@
     .store-bouquets-l-after::after {
         content: "";
         display: block;
-        width: 89px;
+        width: 86px;
         height: 1px;
         background-color: #000000;
     }
