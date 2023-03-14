@@ -4,19 +4,18 @@
 .header-box {
   display: flex;
   justify-content: space-between;
-  
 }
 
 .navigation {
   display: none;
 }
 
-.heder-icons-wrap{
+.heder-icons-wrap {
   display: flex;
   gap: 18px;
 }
 
-.header-contact{
+.header-contact {
   width: 22px;
   height: 22px;
   display: flex;
@@ -27,9 +26,9 @@
   padding: 0;
 }
 
- .header-phone{
- width: 100%;
- height: 100%;
+.header-phone {
+  width: 100%;
+  height: 100%;
 }
 
 .burger-btn {
@@ -75,26 +74,27 @@
     text-decoration: none;
     color: inherit;
   }
-  .header-contact{
+  .header-contact {
     width: 24px;
-    height: 24px;}
-
-  .header-phone{
-   margin-left: auto;
-  }
-  .icon-tel-mob{
-   width: 22px;
-   height: 22px;
+    height: 24px;
   }
 
+  .header-phone {
+    margin-left: auto;
+  }
+  .icon-tel-mob {
+    width: 22px;
+    height: 22px;
+  }
 }
 /* ========Desktop styles=========== */
 @media screen and (min-width: 1280px) {
-  .navigation-list{
+  .navigation-list {
     gap: 48px;
   }
 
-  .header-contact{
+  .header-contact {
     width: 28px;
-    height: 28px;}
+    height: 28px;
+  }
 }
