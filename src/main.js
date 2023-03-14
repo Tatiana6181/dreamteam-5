@@ -1,2 +1,3 @@
 import './js/slick'
-import './js/mobile-menu'
+import './js/menu'
+import './js/modals'
