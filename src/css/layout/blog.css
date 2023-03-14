@@ -16,7 +16,18 @@
 .slick {
   display: flex;
   width: 100%;
+  margin-bottom: 87px;
 }
+@media screen and(min-width: 768px) {
+  .slick {
+    margin-bottom: 103px;
+  }
+}
+
+.slick-container {
+  padding: 0;
+}
+
 .slick__list {
   width: 100%;
   max-width: 1000px;
@@ -44,34 +55,44 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  column-gap: 30px;
   padding: 0;
   width: 50px;
   height: 40px;
   cursor: pointer;
   border: none;
+  background-color: transparent;
+  color: #000000;
 }
 
 .my-slick-prev {
-  left: 50px;
+  left: 90px;
+}
 
-  @media screen and(min-width: 768px) {
-    left: 250px;
+@media screen and (min-width: 768px) {
+  .my-slick-prev {
+    left: 300px;
   }
+}
 
-  @media screen and(min-width: 1200px) {
-    left: 350px;
+@media screen and (min-width: 1200px) {
+  .my-slick-prev {
+    left: 575px;
   }
 }
 
 .my-slick-next {
-  right: 50px;
+  right: 90px;
+}
 
-  @media screen and(min-width: 768px) {
-    right: 250px;
+@media screen and (min-width: 768px) {
+  .my-slick-next {
+    right: 300px;
   }
-
-  @media screen and(min-width: 1200px) {
-    right: 350px;
+}
+@media screen and (min-width: 1200px) {
+  .my-slick-next {
+    right: 575px;
   }
 }
 
@@ -79,6 +100,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 100px;
 }
 
 .subscribe-box-title {
@@ -87,6 +109,9 @@
   line-height: calc(22 / 18);
 }
 @media screen and (min-width: 768px) {
+  .subscribe-box {
+    margin-bottom: 101px;
+  }
   .subscribe-box-title {
     font-size: 32px;
     line-height: calc(39 / 32);
