@@ -1,93 +1,92 @@
-
-  .header{
-    padding-top: 16px;
+.header {
+  padding-top: 16px;
 }
-  .header-box{
-    display: flex;
-  }
-  .logo{
-    margin-right: 183px;
-    text-decoration: none;
-  }
-  .navigation{
-    display: none;
-  }
-  .header-phone{
-    text-decoration: none;
-  }
+.header-box {
+  display: flex;
+}
+.logo {
+  margin-right: 183px;
+  text-decoration: none;
+}
+.navigation {
+  display: none;
+}
+.header-phone {
+  text-decoration: none;
+}
 
-  .burger-btn{
-    margin-left: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 24px;
-    height: 24px;
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    }
+.navigation-list {
+  display: flex;
+}
 
+.burger-btn {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
 
 /* ========Tablet styles=========== */
-    @media screen and (min-width: 768px){
-      .burger-btn{
-        display: none;
-      }
+@media screen and (min-width: 768px) {
+  .burger-btn {
+    display: none;
+  }
 
-      .header-box{
-       justify-content: center;
-       align-items: center;
-      }
-        .navigation{
-            display: block;
-          }
-          
-        .logo{
-            margin-right: 80px;
-          }
-        
-          .logo-header{
-            width: 72px;
-            height: 57px; 
-          }
+  .header-box {
+    justify-content: center;
+    align-items: center;
+  }
+  .navigation {
+    display: block;
+  }
 
-        .navigation-list{
-            display: flex;
-            gap: 24px;
-          }
-        
-        .header{
-            padding-top: 24px;
-        }
-        .navigation-list-link{
-            
-            font-size: 20px;
-            line-height: calc(24/20);
-            text-decoration: none;
-            color: inherit;
-            
-        }
-        .header-phone{
-          margin-left: auto;
-        }
-        .icon-tel-mob{
-          width: 24px;
-          height: 24px;
-        }
-    }
+  .logo {
+    margin-right: 80px;
+  }
+
+  .logo-header {
+    width: 72px;
+    height: 57px;
+  }
+
+  .navigation-list {
+    display: flex;
+    gap: 24px;
+  }
+
+  .header {
+    padding-top: 24px;
+  }
+  .navigation-list-link {
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    text-decoration: none;
+    color: inherit;
+  }
+  .header-phone {
+    margin-left: auto;
+  }
+  .icon-tel-mob {
+    width: 24px;
+    height: 24px;
+  }
+}
 /* ========Desktop styles=========== */
-    @media screen and (min-width: 1280px){
-
-      .logo{
-        margin-right: 261px;
-      }
-      .navigation-list{
-        gap: 48px;
-      }
-      .icon-tel-mob{
-        width: 28px;
-        height: 28px;
-      }
-    }
+@media screen and (min-width: 1280px) {
+  .logo {
+    margin-right: 261px;
+  }
+  .navigation-list {
+    gap: 48px;
+  }
+  .icon-tel-mob {
+    width: 28px;
+    height: 28px;
+  }
+}
