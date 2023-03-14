@@ -18,9 +18,14 @@
   justify-self: center;
   align-items: center;
   width: 100%;
-  margin-bottom: 87px;
+  margin-bottom: 38px;
 }
-@media screen and(min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .slick {
+    margin-bottom: 87px;
+  }
+}
+@media screen and (min-width: 1280px) {
   .slick {
     margin-bottom: 103px;
   }
@@ -34,7 +39,16 @@
   display: block;
   margin-right: 16px;
 }
+@media screen and(min-width: 768px) {
+  .slick__item {
+    margin-right: 16px;
+  }
+}
 
+@media screen and(min-width: 768px) {
+  .slick__item {
+  }
+}
 .slick__box {
   display: flex;
   align-items: center;
@@ -104,7 +118,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 100px;
 }
 
 .subscribe-box-title {
@@ -113,9 +126,6 @@
   line-height: calc(22 / 18);
 }
 @media screen and (min-width: 768px) {
-  .subscribe-box {
-    margin-bottom: 101px;
-  }
   .subscribe-box-title {
     font-size: 32px;
     line-height: calc(39 / 32);
@@ -124,14 +134,17 @@
 
 .subscribe-btn {
   margin-top: 24px;
-  font-size: 28px;
-  line-height: calc(28 / 24);
+  font-size: 18px;
+  line-height: calc(24 / 18);
   color: #ffffff;
-  padding: 20px 70px;
+  padding: 8px 40px;
 }
 
-@media screen and(min-width: 768px) {
+@media screen and (min-width: 768px) {
   .subscribe-btn {
+    font-size: 28px;
+    line-height: calc(28 / 24);
     margin-top: 32px;
+    padding: 20px 70px;
   }
 }
