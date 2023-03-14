@@ -1,15 +1,9 @@
 
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: absolute;
+  top: 16px;
+  z-index: 100;
   width: 100%;
-  z-index: 10;
-  padding-top: 16px;
-}
-
-.header-bg {
-  background-image: linear-gradient(0deg, rgba(250, 111, 84, 0.2), #ffffff);
 }
 
 
@@ -61,7 +55,7 @@
     display: none;
   }
   .header {
-    padding-top: 24px;
+    top: 24px;
   }
   .header-box {
     align-items: center;
