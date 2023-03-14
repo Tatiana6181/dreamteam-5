@@ -45,17 +45,20 @@
   }
 }
 
-@media screen and(min-width: 768px) {
-  .slick__item {
-  }
-}
 .slick__box {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
 }
-
+@media screen and (min-width: 768px) {
+  .slick__box {
+    overflow-x: hidden;
+  }
+  .slick-container {
+    max-width: 718px;
+  }
+}
 @media screen and (min-width: 1280px) {
   .slick__box {
     overflow-x: hidden;
@@ -68,6 +71,7 @@
 .my-slick-prev,
 .my-slick-next {
   position: absolute;
+  font-size: 150%;
   bottom: -40px;
   display: flex;
   align-items: center;
@@ -88,13 +92,14 @@
 
 @media screen and (min-width: 768px) {
   .my-slick-prev {
+    font-size: 200%;
     left: 300px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .my-slick-prev {
-    left: 555px;
+    left: 545px;
   }
 }
 
@@ -104,12 +109,13 @@
 
 @media screen and (min-width: 768px) {
   .my-slick-next {
+    font-size: 200%;
     right: 300px;
   }
 }
 @media screen and (min-width: 1280px) {
   .my-slick-next {
-    right: 555px;
+    right: 545px;
   }
 }
 
