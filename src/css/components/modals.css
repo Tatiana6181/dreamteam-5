@@ -251,6 +251,8 @@
 
 @media screen and (min-width: 1280px) {
   .img-wrap {
+    width: 428px;
+    height: 528px;
     background-image: url(../img/desktop/modal/img_modal@1x.jpg);
   }
   @media (min-device-pixel-ratio: 2),
@@ -294,13 +296,21 @@
     max-width: 588px;
   }
 
+  .modal-desc-wrap{
+    padding: 28px 118px 40px;
+  }
+
+
   .blog-modal-heading {
     margin-bottom: 24px;
     font-size: 28px;
     line-height: calc(34 / 28);
+    white-space: nowrap;
   }
 
   .blog-modal-text {
+    width: 336px;
+
     margin-bottom: 32px;
     font-size: 16px;
     line-height: calc(21 / 16);
@@ -313,8 +323,12 @@
 /* Desktop styles */
 @media screen and (min-width: 1280px) {
   .modal-blog {
+    display: flex;
     max-width: 860px;
     max-height: 588px;
+  }
+  .modal-desc-wrap {
+    padding: 111px 40px 112px;
   }
 }
 
