@@ -1,6 +1,18 @@
+
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
   padding-top: 16px;
 }
+
+.header-bg {
+  background-image: linear-gradient(0deg, rgba(250, 111, 84, 0.2), #ffffff);
+}
+
+
 .header-box {
   display: flex;
   justify-content: space-between;
