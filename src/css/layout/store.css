@@ -4,7 +4,6 @@
   column-gap: 16px;
   row-gap: 16px;
   justify-content: center;
-
   margin-bottom: 32px;
 }
 
@@ -38,6 +37,7 @@
 
   margin-bottom: 32px;
   text-transform: uppercase;
+
 }
 .store-title::after {
   content: '';
@@ -50,6 +50,7 @@
 .store-images {
   margin-bottom: 12px;
 }
+
 
 /* styles for tablet */
 
@@ -81,7 +82,7 @@
   .store-compliments-after:after {
     content: '';
     display: block;
-    width: 122px;
+    width: 120px;
     height: 1px;
     background-color: #000000;
   }
@@ -89,7 +90,7 @@
   .store-bouquets-s-after::after {
     content: '';
     display: block;
-    width: 88px;
+    width: 84px;
     height: 1px;
     background-color: #000000;
   }
@@ -97,7 +98,7 @@
   .store-bouquets-m-after::after {
     content: '';
     display: block;
-    width: 76px;
+    width: 73px;
     height: 1px;
     background-color: #000000;
   }
@@ -105,7 +106,7 @@
   .store-bouquets-l-after::after {
     content: '';
     display: block;
-    width: 87px;
+    width: 85px;
     height: 1px;
     background-color: #000000;
   }
@@ -125,6 +126,7 @@
     margin-bottom: 16px;
   }
 }
+
 
 /* styles for desktop */
 
