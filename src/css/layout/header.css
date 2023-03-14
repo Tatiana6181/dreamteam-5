@@ -53,17 +53,15 @@
             height: 57px; 
           }
 
-        .menu{
+        .navigation-list{
             display: flex;
             gap: 24px;
           }
-        .mobile-menu-btn{
-            display: none;
-        }
+        
         .header{
             padding-top: 24px;
         }
-        .menu-link{
+        .navigation-list-link{
             
             font-size: 20px;
             line-height: calc(24/20);
@@ -85,7 +83,7 @@
       .logo{
         margin-right: 261px;
       }
-      .menu{
+      .navigation-list{
         gap: 48px;
       }
       .icon-tel-mob{

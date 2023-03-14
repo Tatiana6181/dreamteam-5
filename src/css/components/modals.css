@@ -241,28 +241,28 @@
   .img-wrap {
     width: 588px;
     height: 271px;
-    background-image: url(../img/mobile/modal/img_modal_tab@1x.jpg);
+    background-image: url(../img/tablet/modal/img_modal_tab@1x.jpg);
   }
 @media (min-device-pixel-ratio: 2),
   (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     .img-wrap {
-    background-image: url(../img/mobile/modal/img_modal_tab@2x.jpg);
+    background-image: url(../img/tablet/modal/img_modal_tab@2x.jpg);
   }
 }}
 
 
 @media screen and (min-width: 1280px) {
   .img-wrap {
-      background-image: url(../img/mobile/modal/img_modal@1x.jpg);
+      background-image: url(../img/desktop/modal/img_modal@1x.jpg);
   }
   @media (min-device-pixel-ratio: 2),
   (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     .img-wrap {
-    background-image: url(../img/mobile/modal/img_modal@2x.jpg);
+    background-image: url(../img/desktop/modal/img_modal@2x.jpg);
   }
 }}
 
@@ -320,3 +320,52 @@
   
    
   }}
+
+
+ /**
+    |==================================================================================
+    | стилі для модалки trd
+    |==================================================================================
+  */
+  .modal-trd {
+    padding: 44px 16px 32px 16px;
+  }
+  @media screen and (min-width:768px) {
+    .modal-trd {
+      max-width: 480px;
+      /* height: 505px; */
+      padding: 56px 54px 56px 54px;
+    }
+  }
+  
+  .modal-trd-img {
+    width: 188px;
+    height: 142px;
+    margin-bottom: 16px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .modal-title {
+    display: block;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  .modal-txt {
+    margin-top: 14px;
+    text-align: center;
+  }
+  .modal-ctn-btn {
+    margin-top: 18px;
+  }
+  @media screen and (min-width:768px) {
+    .modal-txt {
+      margin-top: 16px;
+    }
+    .modal-ctn-btn {
+      margin-top: 34px;
+    }
+    .modal-trd-img {
+      width: 266px;
+      height: 202px;
+    }
+  }
