@@ -5,12 +5,8 @@
 
 .hero-container {
   position: relative;
-  max-width: 320px;
-  height: 389px;
   z-index: 10;
-  /* height: 100%; */
-  margin: 0 auto;
-  padding: 0 16px;
+  height: 389px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -18,16 +14,15 @@
 
 @media screen and (min-width: 768px) {
   .hero-container {
-    max-width: 720px;
     height: 825px;
   }
 }
 @media screen and (min-width: 1280px) {
   .hero-container {
-    max-width: 1280px;
     height: 878px;
   }
 }
+
 .hero-title {
   position: absolute;
   bottom: 0;
@@ -79,8 +74,9 @@
 }
 .hero-badge {
   width: 46px;
-  margin-left: 230px;
-  margin-right: 60px;
+  margin-left: 200px;
+  margin-right: 80px;
+  font-weight: 400;
   font-size: 14px;
   line-height: calc(17 / 14);
   animation: vertical-slide 1000ms ease-out 1000ms both;
@@ -102,33 +98,31 @@
 }
 
 .hero-btn {
-  width: 64px;
-  height: 76px;
   background-color: transparent;
+  border: none;
   animation: vertical-swipe 1000ms ease-out 1000ms both;
 }
 @media screen and (min-width: 768px) {
   .hero-btn {
-    width: 166px;
-    height: 166px;
-    margin-right: 180px;
+    margin-right: 130px;
   }
 }
-[href='#btn-txt'] {
+
+.hero-icon-circle {
   transform-origin: center;
   animation: infinity-rotate 30s linear 4s infinite;
 }
-.hero-btn:hover [href='#btn-txt'],
-.hero-btn:focus [href='#btn-txt'] {
+.hero-btn:focus .hero-icon-circle .hero-btn:hover .hero-icon-circle {
   animation-play-state: paused;
 }
 
-[href='#btn-arrow'] {
-  transform-origin: center;
+.hero-icon-arrow {
+  transform-box: fill-box;
+  transform-origin: center center;
+  transform: scale(0.3);
   transition: transform 500ms ease-out;
 }
-.hero-btn:hover [href='#btn-arrow'],
-.hero-btn:focus [href='#btn-arrow'] {
+.hero-btn:focus .hero-icon-arrow .hero-btn:hover .hero-icon-arrow {
   transform: rotate(-122deg);
 }
 .hero-shape {
@@ -141,30 +135,55 @@
   animation: scale-up-center 1000ms ease-out 1000ms both;
 }
 .hero-img {
-  width: 100%;
+  max-width: 320px;
   height: 100%;
   object-fit: cover;
   object-position: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .hero-img {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero-img {
+    max-width: 1280px;
+  }
 }
 @keyframes scale-up-center {
   0% {
     clip-path: inset(70px 100px 70px 100px round 100px);
   }
   50% {
-    clip-path: inset(60px 70px 60px 70px round 100px);
+    clip-path: inset(70px 80px 70px 80px round 100px);
   }
   100% {
     clip-path: inset(0 round 0);
+  }
+}
+@media screen and (min-width: 560px) and (max-width: 767px) {
+  @keyframes scale-up-center {
+    0% {
+      clip-path: inset(70px 220px 70px 220px round 180px);
+    }
+    50% {
+      clip-path: inset(70px 180px 70px 180px round 180px);
+    }
+    100% {
+      clip-path: inset(0 round 0);
+    }
   }
 }
 
 @media screen and (min-width: 768px) {
   @keyframes scale-up-center {
     0% {
-      clip-path: inset(150px 200px 130px 200px round 180px);
+      clip-path: inset(150px 240px 130px 240px round 180px);
     }
     50% {
-      clip-path: inset(110px 150px 120px 110px round 180px);
+      clip-path: inset(150px 180px 130px 180px round 180px);
     }
     100% {
       clip-path: inset(0 round 0);
@@ -315,6 +334,7 @@
   }
 }
 .hero-icon {
+  display: block;
   width: 64px;
   height: 76px;
 }
