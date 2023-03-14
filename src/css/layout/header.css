@@ -4,8 +4,25 @@
   top: 16px;
   z-index: 100;
   width: 100%;
+  
 }
 
+@keyframes change-color-text {
+  0% { color: var(--primary-color); }
+  50%{color:var(--primary-color)}
+  100% { color: var(--secondary-color); }
+}
+
+
+@keyframes change-color {
+  0% { fill: var(--primary-color); } /* Початковий колір */
+  50% { fill: var(--primary-color); } /* Кінцевий колір */
+  100% { fill: var(--secondary-color) } /* Повернення до початкового колору */
+}
+
+.logo{
+  fill: var(--primary-color);
+  animation: change-color 2s ease-in-out forwards;}
 
 .header-box {
   display: flex;
@@ -28,8 +45,10 @@
   justify-content: center;
   align-items: center;
   border: none;
-  background-color: inherit;
+  background-color: transparent;
   padding: 0;
+  fill: var(--primary-color);
+  animation: change-color 2s ease-in-out forwards;
 }
 
 .header-phone {
@@ -47,6 +66,8 @@
   background-color: transparent;
   border: none;
   padding: 0;
+  fill: var(--primary-color);
+  animation: change-color 2s ease-in-out forwards;
 }
 
 /* ========Tablet styles=========== */
@@ -62,6 +83,7 @@
   }
   .navigation {
     display: block;
+    animation: change-color-text 2s ease-in-out forwards;
   }
 
   .logo-header {
