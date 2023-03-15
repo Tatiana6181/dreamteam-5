@@ -205,11 +205,19 @@
 }
 
 .modal-form-input:not(:placeholder-shown):required:valid {
+  /* background: #fff url(../ok.png) no-repeat right; */
+  background: #fff url(/src/img/desktop/modal/ok.png) no-repeat right;
   border-color: rgba(60, 188, 129, 1);
+  box-shadow: 0 0 3px #5cd053;
+  background-position:98% 14px;
 }
 
 .modal-form-input:not(:placeholder-shown):required:invalid {
   border-color: rgba(231, 74, 59, 1);
+  box-shadow: 0 0 3px #d45252;
+  /* background: #fff url(../error.png)no-repeat right; */
+  background: #fff url(/src/img/desktop/modal/error.png) no-repeat right;
+  background-position:98% 14px;
 }
 
 /**
