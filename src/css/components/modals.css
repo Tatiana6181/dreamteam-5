@@ -194,6 +194,23 @@
     line-height: calc(22 / 18);
   }
 }
+.modal-form-send:disabled {
+  background-color: rgba(232, 111, 84, 0.4);
+  cursor: not-allowed;
+}
+.modal-form-input:hover,
+.modal-form-input:focus {
+  outline:none;
+  border-color: rgba(17, 17, 17, 0.7);
+}
+
+.modal-form-input:not(:placeholder-shown):required:valid {
+  border-color: rgba(60, 188, 129, 1);
+}
+
+.modal-form-input:not(:placeholder-shown):required:invalid {
+  border-color: rgba(231, 74, 59, 1);
+}
 
 /**
     |==================================================================================
@@ -331,7 +348,6 @@
 @media screen and (min-width: 768px) {
   .modal-trd {
     max-width: 480px;
-    /* height: 505px; */
     padding: 56px 54px 56px 54px;
   }
 }
