@@ -98,6 +98,7 @@
 .delivery-item {
   display: flex;
   margin-bottom: 14px;
+  align-items: center;
 }
 
 .img-fon {
