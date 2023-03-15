@@ -24,6 +24,8 @@
         pattern="[a-zA-Zа-яА-Я]+"
         minlength="2"
         placeholder="Kristin Watson"
+        required
+        autofocus
       />
     </label>
 
@@ -31,14 +33,15 @@
       <span class="modal-form-input-desc">Email</span>
 
       <input
-        class="modal-form-input"
+        class="modal-form-input input"
         type="email"
         name="user_email"
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
         required
         placeholder="tanya.hill@example.com"
       />
     </label>
-    <button class="modal-form-send js-open-modal" data-modal="3" type="submit">
+    <button class="modal-form-send js-open-modal button" data-modal="3" type="submit" disabled>
       Send
     </button>
   </form>
